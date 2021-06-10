@@ -56,7 +56,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "name_age_dataset",
+						"referenceName": "targeblog",
 						"type": "DatasetReference"
 					}
 				]
