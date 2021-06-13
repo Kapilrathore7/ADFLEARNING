@@ -1,0 +1,9 @@
+{
+	"name": "learnadfon13june",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0dd5432d-da40-4364-ac2f-b18544a009ef",
+		"tenantId": "ac8f8529-6db3-4f1d-84e6-23328b407228"
+	}
+}
