@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": {
-					"value": "@concat(\nutcnow())",
+					"value": "@concat(\n'sampleFile',\n'_',\nutcnow())",
 					"type": "Expression"
 				},
 				"container": "output"
