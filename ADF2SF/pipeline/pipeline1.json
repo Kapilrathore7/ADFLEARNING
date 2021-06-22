@@ -27,6 +27,25 @@
 						"type": "DatasetReference"
 					}
 				}
+			},
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [
+					{
+						"activity": "Lookup1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(\nactivity('Lookup1').output.firstRow.STPROC1,\n'foo')",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
