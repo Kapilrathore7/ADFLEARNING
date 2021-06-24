@@ -18,7 +18,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SnowflakeSource",
-						"query": "call STPROC1()",
+						"query": "STPROC1_throw()",
 						"exportSettings": {
 							"type": "SnowflakeExportCopyCommand"
 						}
