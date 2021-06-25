@@ -1,0 +1,11 @@
+{
+	"name": "LS_AzureKeyVault",
+	"properties": {
+		"description": "Linked service to key vault",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://adfkey2sf.vault.azure.net/"
+		}
+	}
+}
