@@ -2,6 +2,35 @@
 	"name": "PL_Call_SP_WITH_EXCECPTION",
 	"properties": {
 		"description": "This will will never get fail. if SP get fail also",
+		"activities": [
+			{
+				"name": "Call SP",
+				"description": "its calling snowflake SP",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SnowflakeSource",
+						"query": "CALL SP_WITHEXCP()",
+						"exportSettings": {
+							"type": "SnowflakeExportCopyCommand"
+						}
+					},
+					"dataset": {
+						"referenceName": "DS_Snowflake",
+						"type": "DatasetReference"
+					}
+				}
+			}
+		],
 		"annotations": []
 	}
 }
