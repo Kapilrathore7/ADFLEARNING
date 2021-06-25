@@ -7,6 +7,9 @@
 		},
 		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://adfkey2sf.vault.azure.net/"
+		},
+		"LS_Snowflake_connectionString": {
+			"value": ""
 		}
 	}
 }

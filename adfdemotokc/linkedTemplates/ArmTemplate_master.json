@@ -11,6 +11,10 @@
 			"type": "string",
 			"defaultValue": "https://adfkey2sf.vault.azure.net/"
 		},
+		"LS_Snowflake_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_Snowflake'"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -40,6 +44,9 @@
 					},
 					"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_AzureKeyVault_properties_typeProperties_baseUrl')]"
+					},
+					"LS_Snowflake_connectionString": {
+						"value": "[parameters('LS_Snowflake_connectionString')]"
 					}
 				}
 			},
