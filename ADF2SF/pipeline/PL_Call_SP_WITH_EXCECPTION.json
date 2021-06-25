@@ -4,7 +4,7 @@
 		"description": "This will will never get fail. if SP get fail also",
 		"activities": [
 			{
-				"name": "Call SP",
+				"name": "Call Snowflake SP",
 				"description": "its calling snowflake SP",
 				"type": "Lookup",
 				"dependsOn": [],
