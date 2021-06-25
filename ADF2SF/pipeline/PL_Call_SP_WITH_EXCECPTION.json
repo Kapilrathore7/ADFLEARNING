@@ -1,0 +1,7 @@
+{
+	"name": "PL_Call_SP_WITH_EXCECPTION",
+	"properties": {
+		"description": "This will will never get fail. if SP get fail also",
+		"annotations": []
+	}
+}
