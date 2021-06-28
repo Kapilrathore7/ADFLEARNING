@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://adfkey2sf.vault.azure.net/"
+			"baseUrl": "https://KV-demo-2-Snowfalke.vault.azure.net/"
 		}
 	}
 }
