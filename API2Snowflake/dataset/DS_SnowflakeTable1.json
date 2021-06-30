@@ -1,0 +1,12 @@
+{
+	"name": "DS_SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Snowflake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": []
+	}
+}
