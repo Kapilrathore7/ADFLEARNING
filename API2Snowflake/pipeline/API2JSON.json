@@ -1,5 +1,5 @@
 {
-	"name": "API2SF",
+	"name": "API2JSON",
 	"properties": {
 		"description": "this pipeline is moving data from API to Snowflake",
 		"activities": [
