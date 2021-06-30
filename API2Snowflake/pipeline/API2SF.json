@@ -4,7 +4,8 @@
 		"description": "this pipeline is moving data from API to Snowflake",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy_API2SF",
+				"description": "its copying data from API to Snowflake",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
