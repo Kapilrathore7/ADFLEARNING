@@ -2,7 +2,7 @@
 	"name": "DS_CSV",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage1",
+			"referenceName": "LS_AzureBlobStorage2_SAS_input",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
