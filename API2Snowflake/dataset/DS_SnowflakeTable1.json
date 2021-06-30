@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "PUBLIC",
-			"table": "TARGET_API_TABLE"
+			"table": "CSV_TABLE"
 		}
 	}
 }
