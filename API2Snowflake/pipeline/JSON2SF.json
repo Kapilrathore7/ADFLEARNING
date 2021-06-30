@@ -1,9 +1,9 @@
 {
-	"name": "CSV2SF",
+	"name": "JSON2SF",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_CSV2SF",
+				"name": "CopyJSON2SF",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -16,14 +16,14 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "JsonSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "JsonReadSettings"
 						}
 					},
 					"sink": {
@@ -32,46 +32,11 @@
 							"type": "SnowflakeImportCopyCommand"
 						}
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"type": "String",
-									"ordinal": 1
-								},
-								"sink": {
-									"name": "FNAME",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"type": "String",
-									"ordinal": 2
-								},
-								"sink": {
-									"name": "LANAME",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"type": "String",
-									"ordinal": 3
-								},
-								"sink": {
-									"name": "AGE",
-									"type": "String"
-								}
-							}
-						]
-					}
+					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "DS_input_CSV",
+						"referenceName": "DS_Json1",
 						"type": "DatasetReference"
 					}
 				],
