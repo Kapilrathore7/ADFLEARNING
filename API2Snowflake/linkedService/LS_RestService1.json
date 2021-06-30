@@ -1,0 +1,13 @@
+{
+	"name": "LS_RestService1",
+	"properties": {
+		"description": "its linked service to store API information",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "http://dummy.restapiexample.com/api/v1/employees",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
