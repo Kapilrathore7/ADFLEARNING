@@ -24,9 +24,12 @@
 						"requestMethod": "GET"
 					},
 					"sink": {
-						"type": "SnowflakeSink",
-						"importSettings": {
-							"type": "SnowflakeImportCopyCommand"
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
 						}
 					},
 					"enableStaging": false
@@ -39,7 +42,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DS_SnowflakeTable1",
+						"referenceName": "DS_Json1",
 						"type": "DatasetReference"
 					}
 				]
